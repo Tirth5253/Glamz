@@ -5,8 +5,7 @@ node_modules
 /.pnp
 .pnp.js
 
-slick-carousel/slick/slick.css
-slick-carousel/slick/slick-theme.css
+
 
 # testing
 /coverage

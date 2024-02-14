@@ -28,9 +28,9 @@ const Slider = () => {
 
     return (
         <div className='slider'>
-            <div className="container" style={{ transform: `translateX(-${currentSlide * 50}vw)` }}>
-                {data.map((imageUrl, index) => (
-                    <img key={index} src={imageUrl} alt={`Slide ${index + 1}`} />
+            <div className="container" style={{ transform: `translateX(-${currentSlide * 50}vw)` }}>    
+                {data.map((ss, index) => (
+                    <img key={index} src={ss} alt={`Slide ${index + 1}`} />
                 ))}
             </div>
             <div className="icons">

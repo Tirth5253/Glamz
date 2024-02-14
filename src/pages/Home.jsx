@@ -6,13 +6,11 @@ function Home() {
   return (
     <div className="m-0 p-0">
       <Navbar />
-      <Slider/> 
+      <Slider /> 
       <Product />
-    
       <Footer />
-      </div>
-    
-  )
+    </div>
+  );
 }
 
-export default Home
+export default Home;

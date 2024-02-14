@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import { Footer, Navbar } from "../components";
+
 const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <div className="container my-3 py-3">
-        <h1 className="text-center">About Us</h1>
-        <hr />
-        <p className="lead text-center">
+      <div className="container mx-auto my-3 py-3">
+        <h1 className="text-center text-4xl font-bold">About Us</h1>
+        <hr className="my-4" />
+        <p className="text-center text-lg leading-relaxed">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
           facere doloremque veritatis odit similique sequi. Odit amet fuga nam
           quam quasi facilis sed doloremque saepe sint perspiciatis explicabo
@@ -23,37 +24,37 @@ const AboutPage = () => {
           dignissimos blanditiis excepturi harum numquam vel nihil? Ipsum
         </p>
 
-        <h2 className="text-center py-4">Our Products</h2>
-        <div className="row">
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Mens's Clothing</h5>
+        <h2 className="text-center text-3xl py-4">Our Products</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="flex justify-center">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Mens's Clothing</div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Women's Clothing</h5>
+          <div className="flex justify-center">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Women's Clothing</div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Jewelery</h5>
+          <div className="flex justify-center">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Jewelery</div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 col-sm-6 mb-3 px-3">
-            <div className="card h-100">
-              <img className="card-img-top img-fluid" src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height={160} />
-              <div className="card-body">
-                <h5 className="card-title text-center">Electronics</h5>
+          <div className="flex justify-center">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img className="w-full" src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Electronics</div>
               </div>
             </div>
           </div>
@@ -61,7 +62,7 @@ const AboutPage = () => {
       </div>
       <Footer />
     </>
-  )
+  );
 }
 
-export default AboutPage
+export default AboutPage;

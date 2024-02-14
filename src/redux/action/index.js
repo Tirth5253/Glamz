@@ -13,3 +13,17 @@ export const delCart = (product) =>{
         payload:product
     }
 }
+// actions.js
+export const addLike = (product) => {
+    return {
+        type: "LIKE",
+        payload: product
+    }
+}
+
+export const removeLike = (product) => {
+    return {
+        type: "UNLIKE",
+        payload: product
+    }
+}

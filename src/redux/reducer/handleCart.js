@@ -19,7 +19,6 @@ const handleCart = (state=cart, action) =>{
             else{
                 return [...state, {...product, qty:1}]                                   //else just add the "product" means the new item and set the quantity as 1
             }
-            break;
         case "DELITEM":
             const exist2 = state.find((x) => x.id === product.id)
             if(exist2.qty === 1){                                                      //If the count of the product is 1 then as we know that if we reduces the count from the product at 1 then it will removed from the cart 
@@ -28,8 +27,6 @@ const handleCart = (state=cart, action) =>{
             else{
                 return state.map((x)=> x.id===product.id?{...x, qty:x.qty-1}:x)      //and here if if qty is >1 than just reduce the qty by 1 and if "id" not matches than return the "x" means exact state that is now 
             }
-            break;
-
         default:
             return state
             break;
